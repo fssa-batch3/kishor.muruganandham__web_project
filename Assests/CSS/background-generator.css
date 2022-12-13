@@ -1,0 +1,35 @@
+@import 'generator.css';
+
+#element{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    background: url("/Assests/Images/Background-image.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.select-field::after {
+    content: '\25BC';
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 0 10px;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+input:not([type="color"]){
+    width: 100%;
+    padding: 10px;
+}
+
+select{
+    appearance: none;
+    width: 100%;
+    background: var(--pure-white);
+    box-shadow: 2px 2px 0 0 var(--pure-black);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Generators</title>
+    <link rel="stylesheet" href="/Assests/CSS/style.css" />
+    <link rel="stylesheet" href="/Assests/CSS/background-generator.css">
+    <script
+      src="https://kit.fontawesome.com/f83e51240b.js"
+      crossorigin="anonymous"
+    ></script>
+ </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <a href="/index.html"
+          ><img src="/Assests/Images/logo.svg" alt="logo" width="180px"
+        /></a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="/index.html" class="nav-a">Home</a></li>
+          <li><a href="#about" class="nav-a">About</a></li>
+          <li><a href="#contact" class="nav-a">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="/index.html#generator" class="get-started primary-button-style"
+        >Get Started</a
+      >
+      <a class="nav-burger-menu active" onclick="closeMenu()">
+        <span class="closeMenu"></span>
+      </a>
+    </header>
+
+    <main>
+        <section id="background-generator">
+            <div class="content-wrapper">
+                <div class="left-wrap">
+                    <div class="generator-preview">
+                        <div id="element"></div>
+                    </div>
+                    <div class="code-preview">
+                        <div id="copycode">background: #fff url(/Assests/Images/Background-image.jpg) center center/cover no-repeat;</div>
+                        <button id="copybutton">Copy to Clipboard!</button>
+                    </div>
+                </div>
+                <div class="right-wrap">
+                    <div class="color-field field">
+                        <label for="bg-color">Background-Color:</label>
+                        <div>
+                            <input type="color" name="bg-color" id="bg-color" oninput="this.nextElementSibling.value = this.value">
+                        <output>#000000</output>
+                        </div>
+                    </div>
+                    <div class="text-field field">
+                        <label for="image-url">Image URL:</label>
+                            <input type="text" name="image-url" id="image-url" class="input-style" value="/Assests/Images/Background-image.jpg">
+                    </div>
+                    <div class="select-field field">
+                        <label for="position">Position:</label>
+                        <select name="position" id="" class="input-style">
+                            <option value="center bottom">Center Bottom</option>
+                            <option value="center center" selected>Center Center</option>
+                            <option value="center top">Center Top</option>
+                            <option value="left bottom">Left Bottom</option>
+                            <option value="left center">Left Center</option>
+                            <option value="left top">Left Top</option>
+                            <option value="right bottom">Right Bottom</option>
+                            <option value="right center">Right Center</option>
+                            <option value="right top">Right Top</option>
+                        </select>
+                    </div>
+                    <div class="select-field field">
+                        <label for="size">Size:</label>
+                        <select name="size" id="" class="input-style">
+                            <option value="">Auto</option>
+                            <option value="">Contain</option>
+                            <option value="" selected>Cover</option>
+                        </select>
+                    </div>
+                    <div class="select-field field">
+                        <label for="repeat">Repeat:</label>
+                        <select name="repeat" id="" class="input-style">
+                            <option value="" selected>No-Repeat</option>
+                            <option value="">Repeat</option>
+                        </select>
+                    </div>
+                    <div class="select-field field">
+                        <label for="clip">Clip:</label>
+                        <select name="clip" id="" class="input-style">
+                            <option value="padding-box">Padding-Box</option>
+                            <option value="border-box" selected>Border-Box</option>
+                            <option value="content-box">Content-Box</option>
+                        </select>
+                    </div>
+                    <div class="select-field field">
+                        <label for="attachment">Attachment:</label>
+                        <select name="attachment" id="" class="input-style">
+                            <option value="fixed">Fixed</option>
+                            <option value="local">Local</option>
+                            <option value="scroll" selected>Scroll</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="footer-wrap">
+          <div class="logo">
+            <a href="/index.html">
+              <img
+                src="/Assests/Images/logo.svg"
+                alt="logo"
+                width="250px"
+                height="50px"
+              />
+            </a>
+          </div>
+          <div class="links-ul">
+            <div class="links-wrapper">
+              <div class="links-heading">Background :</div>
+              <ul>
+                <li><a href="/Pages/background-generator.html">Background-Image</a></li>
+              </ul>
+            </div>
+            <div class="links-wrapper">
+              <div class="links-heading">Box :</div>
+              <ul>
+                <li><a href="/Pages/box-generator.html">Box-Shadow</a></li>
+                <li><a href="/Pages/box-generator.html#tab2">Border</a></li>
+                <li><a href="/Pages/box-generator.html">Border-Radius</a></li>
+                <li><a href="/Pages/box-generator.html">Outline</a></li>
+              </ul>
+            </div>
+            <div class="links-wrapper">
+              <div class="links-heading">Color :</div>
+              <ul>
+                <li><a href="/Pages/color-generator.html">Color's</a></li>
+                <li><a href="/Pages/color-generator.html">Gradient Color</a></li>
+              </ul>
+            </div>
+            <div class="links-wrapper">
+              <div class="links-heading">Filter :</div>
+              <ul>
+                <li><a href="/Pages/filter-generator.html">Drop-Shadow</a></li>
+                <li><a href="/Pages/filter-generator.html">Blur</a></li>
+                <li><a href="/Pages/filter-generator.html">Brightness</a></li>
+                <li><a href="/Pages/filter-generator.html">Contrast</a></li>
+                <li><a href="/Pages/filter-generator.html">Grayscale</a></li>
+                <li><a href="/Pages/filter-generator.html">Hue Rotate</a></li>
+                <li><a href="/Pages/filter-generator.html">Invert</a></li>
+                <li><a href="/Pages/filter-generator.html">Saturate</a></li>
+                <li><a href="/Pages/filter-generator.html">Sepia</a></li>
+              </ul>
+            </div>
+            <div class="links-wrapper">
+              <div class="links-heading">Text :</div>
+              <ul>
+                <li><a href="/Pages/text-generator.html">Text-Shadow</a></li>
+                <li><a href="/Pages/text-generator.html">Text-Transform</a></li>
+                <li><a href="/Pages/text-generator.html">Letter-Spacing</a></li>
+                <li><a href="/Pages/text-generator.html">Line Height</a></li>
+                <li><a href="/Pages/text-generator.html">Word Spacing</a></li>
+              </ul>
+            </div>
+            <div class="links-wrapper">
+              <div class="links-heading">Transform :</div>
+              <ul>
+                <li><a href="/Pages/transform-generator.html">Perspective</a></li>
+                <li><a href="/Pages/transform-generator.html">Rotate</a></li>
+                <li><a href="/Pages/transform-generator.html">Scale</a></li>
+                <li><a href="/Pages/transform-generator.html">Skew</a></li>
+                <li><a href="/Pages/transform-generator.html">Translate</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-links">
+            <p>Follow us :</p>
+            <div class="social-icons">
+              <a href="" aria-label="Github Page"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="" aria-label="Twitter Page"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" aria-label="Github Source Code"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

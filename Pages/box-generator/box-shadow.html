@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Generators</title>
+    <link rel="stylesheet" href="/Assests/CSS/index.css" />
+    <link rel="stylesheet" href="/Assests/CSS/box-shadow.css">
+    <script
+      src="https://kit.fontawesome.com/f83e51240b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assests/Js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <a href="/index.html"
+          ><img src="/Assests/Images/logo.svg" alt="logo" width="180px"
+        /></a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html" class="nav-a">Home</a></li>
+          <li><a href="#about" class="nav-a">About</a></li>
+          <li><a href="#contact" class="nav-a">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#generator" class="get-started primary-button-style"
+        >Get Started</a
+      >
+      <a class="nav-burger-menu active" onclick="closeMenu()">
+        <span class="closeMenu"></span>
+      </a>
+    </header>
+    
+    <main>
+        <section id="background-generator">
+            <div class="content-wrapper">
+                <div class="left-wrap">
+                    <div class="generator-preview">
+                        <div id="element"></div>
+                    </div>
+                    <div class="code-preview">
+                        <div id="copycode">background: #fff url(/Assests/Images/Background-image.jpg) center center/cover no-repeat;</div>
+                        <button id="copybutton">Copy to Clipboard!</button>
+                    </div>
+                </div>
+                <div class="right-wrap">
+                    <div class="color-field field">
+                        <label for="bg-color">Shadow-Color:</label>
+                        <div>
+                            <input type="color" name="bg-color" id="bg-color" oninput="this.nextElementSibling.value = this.value">
+                        <output>#000000</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="">Horizontal Shadow Length:</label>
+                        <div class="">
+                            <input type="range" name="" id="" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>10 px</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="">Vertical Shadow Length:</label>
+                        <div class="">
+                            <input type="range" name="" id="" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>10 px</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="">Blur Radius:</label>
+                        <div class="">
+                            <input type="range" name="" id="" min="0" max="300" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>5 px</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="">Spread Radius:</label>
+                        <div class="">
+                            <input type="range" name="" id="" min="-150" max="150" value="0" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>0 px</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="">Shadow Color Opacity:</label>
+                        <div class="">
+                            <input type="range" name="" id="" min="0" max="1" value="0.80" step="0.01" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>0.80</output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Page -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              src="/Assests/Images/logo.svg"
+              alt="logo"
+              width="250px"
+              height="50px"
+            />
+          </a>
+        </div>
+        <div class="links-ul">
+          <div class="links-wrapper">
+            <div class="links-heading">Background :</div>
+            <ul>
+              <li><a href="./Pages/background-generator.html">Background-Image</a></li>
+            </ul>
+          </div>
+          <div class="links-wrapper">
+            <div class="links-heading">Box :</div>
+            <ul>
+              <li><a href="./Pages/box-generator.html">Box-Shadow</a></li>
+              <li><a href="./Pages/box-generator.html">Border</a></li>
+              <li><a href="./Pages/box-generator.html">Border-Radius</a></li>
+              <li><a href="./Pages/box-generator.html">Outline</a></li>
+            </ul>
+          </div>
+          <div class="links-wrapper">
+            <div class="links-heading">Color :</div>
+            <ul>
+              <li><a href="./Pages/color-generator.html">Color's</a></li>
+              <li><a href="./Pages/color-generator.html">Gradient Color</a></li>
+            </ul>
+          </div>
+          <div class="links-wrapper">
+            <div class="links-heading">Filter :</div>
+            <ul>
+              <li><a href="./Pages/filter-generator.html">Drop-Shadow</a></li>
+              <li><a href="./Pages/filter-generator.html">Blur</a></li>
+              <li><a href="./Pages/filter-generator.html">Brightness</a></li>
+              <li><a href="./Pages/filter-generator.html">Contrast</a></li>
+              <li><a href="./Pages/filter-generator.html">Grayscale</a></li>
+              <li><a href="./Pages/filter-generator.html">Hue Rotate</a></li>
+              <li><a href="./Pages/filter-generator.html">Invert</a></li>
+              <li><a href="./Pages/filter-generator.html">Saturate</a></li>
+              <li><a href="./Pages/filter-generator.html">Sepia</a></li>
+            </ul>
+          </div>
+          <div class="links-wrapper">
+            <div class="links-heading">Text :</div>
+            <ul>
+              <li><a href="./Pages/text-generator.html">Text-Shadow</a></li>
+              <li><a href="./Pages/text-generator.html">Text-Transform</a></li>
+              <li><a href="./Pages/text-generator.html">Letter-Spacing</a></li>
+              <li><a href="./Pages/text-generator.html">Line Height</a></li>
+              <li><a href="./Pages/text-generator.html">Word Spacing</a></li>
+            </ul>
+          </div>
+          <div class="links-wrapper">
+            <div class="links-heading">Transform :</div>
+            <ul>
+              <li><a href="./Pages/transform-generator.html">Perspective</a></li>
+              <li><a href="./Pages/transform-generator.html">Rotate</a></li>
+              <li><a href="./Pages/transform-generator.html">Scale</a></li>
+              <li><a href="./Pages/transform-generator.html">Skew</a></li>
+              <li><a href="./Pages/transform-generator.html">Translate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links">
+          <p>Follow us :</p>
+          <div class="social-icons">
+            <a href="" aria-label="Github Page"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="" aria-label="Twitter Page"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="" aria-label="Github Source Code"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

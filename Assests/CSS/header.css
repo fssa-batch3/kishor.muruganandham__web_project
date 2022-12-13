@@ -1,0 +1,105 @@
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    right: 50px;
+    height: 80px;
+    border-radius: 10px;
+    border: 0.5px solid var(--pure-black);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2) ;
+    z-index: 10;
+  }
+
+  .header-nav ul {
+    display: flex;
+    gap: 30px;
+  }
+  .header-nav ul li a{
+    font-size: var(--t2-fs);
+  }
+  .header-nav ul li a:hover {
+    box-shadow: 0 2px 0 0 var(--pure-black);
+    transition: 0.2s ease;
+  }
+  .active-section{
+    box-shadow: 0 2px 0 0 var(--pure-black);
+    transition: 0.2s ease;
+  }
+  .nav-burger-menu {
+      display: none;
+      padding: 8px 8px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .closeMenu {
+      display: inline-block;
+      position: relative;
+      width: 24px;
+      height: 2px;
+      background-color: var(--pure-black);
+      border-radius: 5px;
+      vertical-align: middle;
+      transition: height 1s ease;
+    }
+    .nav-burger-menu:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
+    .closeMenu::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: var(--pure-black);
+      border-radius: 5px;
+      top: -8px;
+      left: 0;
+      transition: all 0.8s ease;
+    }
+    .closeMenu::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: var(--pure-black);
+      border-radius: 5px;
+      top: 8px;
+      left: 0;
+      transition: all 0.8s ease;
+    }
+    .closeMenu.active {
+      height: 0;
+      transition: height 0.5s ease;
+    }
+    .closeMenu.active::after {
+      transform: rotate(45deg);
+      transition: all 1s ease;
+      top: 0;
+    }
+    .closeMenu.active::before {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: all 1s ease;
+    }
+  @media (max-width: 768px){
+  .header-nav, .get-started{
+      display: none;
+  }
+  header{
+    flex-direction: row-reverse;
+  }
+  .nav-burger-menu{
+      display: unset;
+  }
+  header{
+    right: 5px;
+    left: 5px;
+    }
+  }
+  
