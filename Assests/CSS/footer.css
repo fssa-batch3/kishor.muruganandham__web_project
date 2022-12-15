@@ -5,7 +5,7 @@ footer{
     place-items: center;
     padding: 80px 20px;
     background-color: var(--secondary-footer-green);
-    border-top: 2px solid var(--pure-black);
+    border-top: 2px solid var(--border-black);
 }
 .footer-wrap{
     width: 100%;
@@ -42,11 +42,14 @@ footer{
     font-size: var(--t1-fs);
     margin-bottom: 20px;
 }
-.social-icons>a>i{
+.social-icons>a>.bi{
     font-size: 26px;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    margin: 0 20px;
+    border-radius: 50%;
 }
-.social-icons>a>i:hover{
-    transform: scale(1.12);
+.social-icons>a>.bi:hover {
+    background-color: var(--pure-black);
+    color: var(--pure-white);
     transition: 0.2s ease;
 }

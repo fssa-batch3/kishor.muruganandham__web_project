@@ -3,8 +3,7 @@
 #element{
     width: 100%;
     aspect-ratio: 16/9;
-    background-color: black;
-    background: url("/Assests/Images/Background-image.jpg") no-repeat center center;
+    background: var(--pure-black) url("/Assests/Images/Background-image.jpg") no-repeat center center;
     background-size: cover;
 }
 

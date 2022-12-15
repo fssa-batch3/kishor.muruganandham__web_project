@@ -1,96 +1,126 @@
 /* Header */
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background-color: var(--pure-white);
-    border-bottom: 2px solid var(--pure-black);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2) ;
-    z-index: 10;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: var(--pure-white);
+  border-bottom: 2px solid var(--border-black);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 
-  .header-nav ul {
-    display: flex;
-    gap: 30px;
-  }
-  .nav-a{
-    display: inline-block;
-    font-size: var(--t2-fs);
-  }
-  .nav-a:hover {
-    box-shadow: 0 2px 0 0 var(--pure-black);
-    transition: 0.2s ease;
+.header-nav ul {
+  display: flex;
+  gap: 30px;
+}
+.nav-a {
+  display: inline-block;
+  font-size: var(--t2-fs);
+  cursor: pointer;
+}
+.nav-a:hover {
+  box-shadow: 0 2px 0 0 var(--pure-black);
+  transition: 0.2s ease;
+}
+.nav-burger-menu {
+  display: none;
+  padding: 8px 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.closeMenu {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: var(--pure-black);
+  border-radius: 5px;
+  vertical-align: middle;
+  transition: height 0.9s ease;
+}
+.nav-burger-menu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.closeMenu::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--pure-black);
+  border-radius: 5px;
+  top: -8px;
+  left: 0;
+  transition: all 0.8s ease;
+}
+.closeMenu::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--pure-black);
+  border-radius: 5px;
+  top: 8px;
+  left: 0;
+  transition: all 0.8s ease;
+}
+.closeMenu.active-hamburger {
+  height: 0;
+  transition: height 0.5s ease;
+}
+.closeMenu.active-hamburger::after {
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  top: 0;
+}
+.closeMenu.active-hamburger::before {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: all 0.7s ease;
+}
+
+.bi-moon-stars-fill {
+  display: block;
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+.bi-brightness-high-fill {
+  display: none;
+}
+#dark-light.dl-active > .bi-moon-stars-fill {
+  display: none;
+}
+#dark-light.dl-active > .bi-brightness-high-fill {
+  display: block;
+  color: var(--pure-black);
+  font-size: 24px;
+  cursor: pointer;
+}
+.back-blur {
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+}
+.back-blur.blur-active {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.251);
+  backdrop-filter: blur(5px);
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .header-nav,
+  .get-started {
+    display: none;
   }
   .nav-burger-menu {
-      padding: 8px 8px 10px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .closeMenu {
-      display: inline-block;
-      position: relative;
-      width: 24px;
-      height: 2px;
-      background-color: var(--pure-black);
-      border-radius: 5px;
-      vertical-align: middle;
-      transition: height 1s ease;
-    }
-    .nav-burger-menu:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-      transition: 0.3s ease-in-out;
-    }
-    .closeMenu::before {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      background-color: var(--pure-black);
-      border-radius: 5px;
-      top: -8px;
-      left: 0;
-      transition: all 0.8s ease;
-    }
-    .closeMenu::after {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 2px;
-      background-color: var(--pure-black);
-      border-radius: 5px;
-      top: 8px;
-      left: 0;
-      transition: all 0.8s ease;
-    }
-    .closeMenu.active {
-      height: 0;
-      transition: height 0.5s ease;
-    }
-    .closeMenu.active::after {
-      transform: rotate(45deg);
-      transition: all 1s ease;
-      top: 0;
-    }
-    .closeMenu.active::before {
-      transform: rotate(-45deg);
-      top: 0;
-      transition: all 1s ease;
-    }
-  @media (max-width: 768px){
-  .header-nav, .get-started{
-      display: none;
+    display: unset;
   }
-  header{
-    flex-direction: row-reverse;
-  }
-  .nav-burger-menu{
-      display: unset;
-  }
-  }
-  
+}

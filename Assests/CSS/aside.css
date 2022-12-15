@@ -1,28 +1,29 @@
 aside{
     position: fixed;
     max-width: 380px;
-    right: 0;
+    right: -500px;
     top: 80px;
-    padding: 50px ;
+    bottom: 0;
+    padding: 50px 30px;
     background-color: var(--pure-white);
-    border-radius: 10px;
     border: 0.5px solid var(--pure-black);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2) ;
-    z-index: 10;
+    z-index: 8;
+    transition: all 0.5s ease;
+}
+aside.active-aside {
+    right: 0;
+    transition: all 0.5s ease;
 }
 @media (max-width: 768px){
     aside{
-        left:0;
-    }
+        left:-500px;
+}
     aside.active-aside {
-        left: 50px;
+        left: 0;
         transition: all 0.5s ease-in-out;
       }
     }
-aside.active-aside {
-    right: 50px;
-    transition: all 0.5s ease-in-out;
-  }
   
   aside > ul {
     display: flex;
@@ -37,18 +38,18 @@ aside.active-aside {
     background-color: var(--light-hover);
     transition: 0.3s ease-in-out;
   }
-  aside > ul > li > label {
-    padding: 10px 20px;
+  .side-label {
+    padding: 10px 50px 10px 20px;
     display: block;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
   }
-  .fa-angle-down {
+  .bi-caret-down-fill {
     position: absolute;
     content: "";
     right: 20px;
-    top: 15px;
+    top: 10px;
     font-size: 18px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -83,7 +84,7 @@ aside.active-aside {
     max-height: 250px;
     transition: max-height 0.3s ease, visibility 0.5s ease;
   }
-  input[name="side-list"]:checked ~ .fa-angle-down {
+  input[name="side-list"]:checked ~ .bi-caret-down-fill {
     transform: rotate(180deg);
     transition: all 0.5s ease;
   }

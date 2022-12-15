@@ -23,12 +23,12 @@
   line-height: 30px;
 }
 
-.home-content > a .fa-arrow-right {
-  color: var(--pure-white);
+.home-content > a .bi-arrow-right-short {
+  color: #ffffff;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 24px;
 }
-.home-content > a:hover .fa-arrow-right {
+.home-content > a:hover .bi-arrow-right-short::before{
   transform: translateX(3px);
   transition: 0.2s ease;
 }
@@ -45,8 +45,8 @@
   place-items: center;
   padding: 80px 20px;
   background-color: var(--secondary-pink);
-  border-bottom: 2px solid var(--pure-black);
-  border-top: 2px solid var(--pure-black);
+  border-bottom: 2px solid var(--border-black);
+  border-top: 2px solid var(--border-black);
 }
 .card-wrapper {
   display: flex;
@@ -69,12 +69,12 @@
   justify-content: center;
   padding: 20px;
   border-radius: 20px;
-  border: 2px solid var(--pure-black);
+  border: 2px solid var(--shadow-black);
   background-color: var(--card-background);
   box-shadow: 8px 8px 0 0 var(--card-shadow-blue),
-    9px 9px 0 2px var(--pure-black);
+    9px 9px 0 2px var(--shadow-black);
   transform-style: preserve-3d;
-  transition: all 2s ease;
+  transition: transform 1.5s ease;
 }
 
 .card:hover .content {
@@ -148,7 +148,7 @@
   display: grid;
   place-items: center;
   background-color: var(--secondary-yellow);
-  border-top: 2px solid var(--pure-black);
+  border-top: 2px solid var(--border-black);
 }
 
 .contact-form {
@@ -178,7 +178,7 @@ textarea {
 }
 
 .contact-form > button > i {
-  color: var(--pure-white);
+  color: #ffffff;
 }
 .contact-form > button:hover .fa-rocket {
   transform: rotate(40deg);
