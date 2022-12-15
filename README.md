@@ -13,3 +13,6 @@ Market Research: https://docs.google.com/document/d/1s3fdGmoVaPbIQlvZOZ6A2U2pbJx
 User flow: https://drive.google.com/file/d/1bnIZqK_RewUmIMctWrqlhe5Z5-fzv5Zx/view?usp=share_link
 
 Wireframe: https://drive.google.com/file/d/17X4oCU0AgUCh2ylQEbIfUKkLNJ5vm4re/view?usp=share_link
+
+Sonar Cloud:
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_kishor.muruganandham__web_project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_kishor.muruganandham__web_project)
