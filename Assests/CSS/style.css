@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "header.css";
+@import "aside.css";
 @import "footer.css";
 
 /* Font Import */
@@ -20,6 +21,8 @@
   --pure-white: rgb(255, 255, 255);
   --card-background: rgb(254, 249, 237);
   --card-shadow-blue: #65c8cf;
+  --light-hover: rgba(0, 0, 0, 0.08);
+
 
   /* Typography */
   --h1-fs: 84px;

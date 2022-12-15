@@ -1,0 +1,92 @@
+aside{
+    position: fixed;
+    max-width: 380px;
+    right: 0;
+    top: 80px;
+    padding: 50px ;
+    background-color: var(--pure-white);
+    border-radius: 10px;
+    border: 0.5px solid var(--pure-black);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2) ;
+    z-index: 10;
+}
+@media (max-width: 768px){
+    aside{
+        left:0;
+    }
+    aside.active-aside {
+        left: 50px;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+aside.active-aside {
+    right: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  aside > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  aside > ul > li {
+    margin: 5px 0;
+    position: relative;
+  }
+  .side-label:hover {
+    background-color: var(--light-hover);
+    transition: 0.3s ease-in-out;
+  }
+  aside > ul > li > label {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .fa-angle-down {
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  input[name="side-list"] {
+    display: none;
+  }
+  .aside-content {
+    display: flex;
+    flex-direction: column;
+    visibility: collapse;
+    padding: 0 20px;
+    max-height: 0px;
+    transition: max-height 0.2s ease;
+  }
+  .aside-content.active {
+    visibility: visible;
+    max-height: 250px;
+  }
+  .aside-content a {
+    color: var(--light-black);
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  .aside-content a:hover {
+    background-color: var(--light-hover);
+    transition: 0.3s ease-in-out;
+  }
+  input[name="side-list"]:checked ~ .aside-content {
+    visibility: visible;
+    max-height: 250px;
+    transition: max-height 0.3s ease, visibility 0.5s ease;
+  }
+  input[name="side-list"]:checked ~ .fa-angle-down {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+  input[name="side-list"]:checked + .side-label {
+    background-color: var(--light-hover);
+  }
