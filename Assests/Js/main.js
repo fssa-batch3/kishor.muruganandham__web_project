@@ -11,7 +11,7 @@ function closeMenu() {
 
 // In this Function the Customized Code is Copied by User with One Click
 function copyCode() {
-  var copyText = document.getElementById("copyCode").innerHTML;
+  let copyText = document.getElementById("copyCode").innerHTML;
 // Copies the code to user clipboard
   navigator.clipboard.writeText(copyText);
 // Changing the innerHtml of button when it is coppied
