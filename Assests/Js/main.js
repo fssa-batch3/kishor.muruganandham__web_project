@@ -9,6 +9,8 @@ function closeMenu() {
   document.querySelector(".back-blur").classList.toggle("blur-active");
 }
 
+
+
 // In this Function the Customized Code is Copied by User with One Click
 function copyCode() {
   let copyText = document.getElementById("copyCode").innerHTML;
@@ -23,6 +25,9 @@ function copyCode() {
 // Timeout is set for 5 seconds
   setTimeout(timeOut, 5000);
 }
+
+
+
 
 // Get the current value of the "dark-mode" key from local storage
 let isDarkMode = localStorage.getItem("dark-mode");
