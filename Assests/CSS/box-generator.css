@@ -1,0 +1,74 @@
+@import 'generator.css';
+
+#background-generator{
+    padding: 100px 0;
+}
+#element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+.range-field{
+    width: 100%;
+}
+input[type="range"]{
+    flex: 4;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--pure-white);
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: var(--primary-color);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: grab;
+}
+input[type="range"]:focus::-webkit-slider-thumb{
+    box-shadow: 0 0 0 2px var(--pure-white), 0 0 0 4px var(--primary-color);
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    cursor: grabbing;
+}
+output{
+    flex: 1;
+    vertical-align: middle;
+}
+.range-field>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.select-field::after {
+    content: '\25BC';
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 0 10px;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+
+
+select{
+    appearance: none;
+    width: 100%;
+    background: var(--pure-white);
+    box-shadow: 2px 2px 0 0 var(--pure-black);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
