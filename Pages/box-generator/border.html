@@ -150,16 +150,16 @@
                         <div id="element"></div>
                     </div>
                     <div class="code-preview">
-                        <div id="copyCode">background: #fff url(/Assests/Images/Background-image.jpg) center center/cover no-repeat;</div>
+                        <div id="copyCode"></div>
                         <button id="copyButton" onclick="copyCode()">Copy to Clipboard!</button>
                     </div>
                 </div>
                 <div class="right-wrap">
                     <div class="color-field field">
-                        <label for="bg-color">Shadow-Color:</label>
+                        <label for="bg-color">Color:</label>
                         <div>
-                            <input type="color" name="bg-color" id="bg-color" oninput="this.nextElementSibling.value = this.value">
-                        <output>#000000</output>
+                            <input type="color" name="bg-color" id="bg-color" value="#999999" oninput="this.nextElementSibling.value = this.value">
+                        <output>#999999</output>
                         </div>
                     </div>
                     <div class="select-field field">
@@ -176,7 +176,7 @@
                         </select>
                   </div>
                     <div class="range-field field">
-                        <label for="bor-wid">Shadow Color Opacity:</label>
+                        <label for="bor-wid">Width:</label>
                         <div class="">
                             <input type="range" name="bor-wid" id="bor-wid" min="1" max="20" value="10" step="1" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>10 px</output>
@@ -271,5 +271,6 @@
     </div>
   </footer>
 
+  <script src="../../Assests/Js/border.js"></script>
   </body>
 </html>

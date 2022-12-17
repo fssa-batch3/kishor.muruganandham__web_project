@@ -156,45 +156,51 @@
                 </div>
                 <div class="right-wrap">
                     <div class="color-field field">
-                        <label for="bg-color">Shadow-Color:</label>
+                        <label for="cshadow">Shadow-Color:</label>
                         <div>
-                            <input type="color" name="bg-color" id="bg-color" oninput="this.nextElementSibling.value = this.value">
+                            <input type="color" name="cshadow" id="cshadow" oninput="this.nextElementSibling.value = this.value">
                         <output>#000000</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="">Horizontal Shadow Length:</label>
+                        <label for="hshadow">Horizontal Shadow Length:</label>
                         <div class="">
-                            <input type="range" name="" id="" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="hshadow" id="hshadow" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>10 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="">Vertical Shadow Length:</label>
+                        <label for="vshadow">Vertical Shadow Length:</label>
                         <div class="">
-                            <input type="range" name="" id="" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="vshadow" id="vshadow" min="-100" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>10 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="">Blur Radius:</label>
+                        <label for="bshadow">Blur Radius:</label>
                         <div class="">
-                            <input type="range" name="" id="" min="0" max="300" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="bshadow" id="bshadow" min="0" max="300" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>5 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="">Spread Radius:</label>
+                        <label for="sshadow">Spread Radius:</label>
                         <div class="">
-                            <input type="range" name="" id="" min="-150" max="150" value="0" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="sshadow" id="sshadow" min="-150" max="150" value="0" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>0 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="">Shadow Color Opacity:</label>
+                        <label for="oshadow">Shadow Color Opacity:</label>
                         <div class="">
-                            <input type="range" name="" id="" min="0" max="1" value="0.80" step="0.01" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="oshadow" id="oshadow" min="0" max="1" value="0.80" step="0.01" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>0.80</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
+                        <label for="ishadow">Inset Shadow:</label>
+                        <div class="">
+                            <input type="checkbox" name="ishadow" id="ishadow" min="0" max="1" value="0.80">
                         </div>
                     </div>
                 </div>
@@ -285,6 +291,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="../../Assests/Js/box-shadow.js"></script>
 
   </body>
 </html>
