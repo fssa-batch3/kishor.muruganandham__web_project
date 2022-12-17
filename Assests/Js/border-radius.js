@@ -43,4 +43,4 @@ function generateShadow() {
   
 }
 
-window.onload = generateShadow();
+generateShadow();

@@ -25,4 +25,4 @@ function hexToRgba(cShadow, oShadow) {
   return `rgba(${r},${g},${b},${oShadow})`;
 };
 
-window.onload = generateShadow();
+generateShadow();

@@ -13,5 +13,4 @@ function generateShadow() {
   document.getElementById("copyCode").innerHTML = `border: ${borderStyle};`;
 };
 
-
-window.onload = generateShadow();
+generateShadow();
