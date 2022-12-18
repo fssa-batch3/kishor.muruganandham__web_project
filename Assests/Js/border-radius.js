@@ -2,9 +2,9 @@ let selector = document.getElementById("radius-type");
 
 let inputs = document.querySelectorAll(".field input");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generateBorderRadius));
 
-function generateShadow() {
+function generateBorderRadius() {
   selector.addEventListener("change", function () {
     if (selector.value == "same") {
       document.querySelector(".same-radius").style.display = "block";
@@ -43,4 +43,4 @@ function generateShadow() {
   
 }
 
-generateShadow();
+generateBorderRadius();

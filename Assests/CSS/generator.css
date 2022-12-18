@@ -27,7 +27,7 @@
 }
 .generator-preview{
     background-color: var(--pure-white);
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 0 0 var(--shadow-black);
     border: 2px solid var(--shadow-black);

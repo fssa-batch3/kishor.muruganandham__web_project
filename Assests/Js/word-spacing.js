@@ -1,8 +1,8 @@
 let inputs = document.querySelectorAll(".field input");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generateWordSpacing));
 
-function generateShadow() {
+function generateWordSpacing() {
   let wSpacing = document.getElementById("word-spacing").value;
 
   let wordSpace = `${wSpacing}px`;
@@ -12,4 +12,4 @@ function generateShadow() {
 };
 
 
-generateShadow();
+generateWordSpacing();

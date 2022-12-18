@@ -1,8 +1,10 @@
 let inputs = document.querySelectorAll(".field input");
+let selector = document.querySelectorAll(".field select");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generateBorder));
+selector.forEach((selc) => selc.addEventListener("change", generateBorder));
 
-function generateShadow() {
+function generateBorder() {
   let bgColor = document.getElementById("bg-color").value;
   let bStyle = document.getElementById("bor-style").value;
   let bWidth = document.getElementById("bor-wid").value;
@@ -13,4 +15,4 @@ function generateShadow() {
   document.getElementById("copyCode").innerHTML = `border: ${borderStyle};`;
 };
 
-generateShadow();
+generateBorder();

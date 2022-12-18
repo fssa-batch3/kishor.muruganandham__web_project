@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../../Assests/Images/code-slash.svg" type="image/x-icon">
+    <meta name="theme-color" content="#5551ff" />
     <link rel="stylesheet" href="../../Assests/CSS/index.css" />
     <link rel="stylesheet" href="../../Assests/CSS/background-generator.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -16,17 +17,15 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="CSS Generators — Preview, Edit and Generate CSS.">
     <meta property="og:description" content="CSS Generator is the ultimate tool for web designers looking to quickly and easily create custom styles for their website. With a user-friendly interface and a wide range of customizable options, our website makes it easy for anyone to create professional-grade styles without any coding knowledge.">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="og:image" content="https://drive.google.com/file/d/1hplStRlvXLwRYDzmTe_MRiYXCt3K0NHQ/view?usp=share_link">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="CSS Generators — Preview, Edit and Generate CSS.">
     <meta property="twitter:description" content="CSS Generator is the ultimate tool for web designers looking to quickly and easily create custom styles for their website. With a user-friendly interface and a wide range of customizable options, our website makes it easy for anyone to create professional-grade styles without any coding knowledge.">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:image" content="https://drive.google.com/file/d/1hplStRlvXLwRYDzmTe_MRiYXCt3K0NHQ/view?usp=share_link">
       </head>
 
 
@@ -163,11 +162,11 @@
                     </div>
                     <div class="text-field field">
                         <label for="image-url">Image URL:</label>
-                            <input type="text" name="image-url" id="image-url" class="input-style" value="/Assests/Images/Background-image.jpg">
+                            <input type="text" name="image-url" id="image-url" class="input-style" value="../../Assests/Images/Background-image.jpg">
                     </div>
                     <div class="select-field field">
                         <label for="position">Position:</label>
-                        <select name="position" id="" class="input-style">
+                        <select name="position" id="position" class="input-style">
                             <option value="center bottom">Center Bottom</option>
                             <option value="center center" selected>Center Center</option>
                             <option value="center top">Center Top</option>
@@ -181,22 +180,22 @@
                     </div>
                     <div class="select-field field">
                         <label for="size">Size:</label>
-                        <select name="size" id="" class="input-style">
-                            <option value="">Auto</option>
-                            <option value="">Contain</option>
-                            <option value="" selected>Cover</option>
+                        <select name="size" id="size" class="input-style">
+                            <option value="auto">Auto</option>
+                            <option value="contain">Contain</option>
+                            <option value="cover" selected>Cover</option>
                         </select>
                     </div>
                     <div class="select-field field">
                         <label for="repeat">Repeat:</label>
-                        <select name="repeat" id="" class="input-style">
-                            <option value="" selected>No-Repeat</option>
-                            <option value="">Repeat</option>
+                        <select name="repeat" id="repeat" class="input-style">
+                            <option value="no-repeat" selected>No-Repeat</option>
+                            <option value="repeat">Repeat</option>
                         </select>
                     </div>
                     <div class="select-field field">
                         <label for="clip">Clip:</label>
-                        <select name="clip" id="" class="input-style">
+                        <select name="clip" id="clip" class="input-style">
                             <option value="padding-box">Padding-Box</option>
                             <option value="border-box" selected>Border-Box</option>
                             <option value="content-box">Content-Box</option>
@@ -204,7 +203,7 @@
                     </div>
                     <div class="select-field field">
                         <label for="attachment">Attachment:</label>
-                        <select name="attachment" id="" class="input-style">
+                        <select name="attachment" id="attachment" class="input-style">
                             <option value="fixed">Fixed</option>
                             <option value="local">Local</option>
                             <option value="scroll" selected>Scroll</option>
@@ -298,6 +297,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../../Assests/Js/background-image.js"></script>
 
   </body>
 </html>

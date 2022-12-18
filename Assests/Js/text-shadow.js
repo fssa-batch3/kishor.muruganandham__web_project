@@ -1,8 +1,8 @@
 let inputs = document.querySelectorAll(".field input");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generateTextShadow));
 
-function generateShadow() {
+function generateTextShadow() {
   let hShadow = document.getElementById("hshadow").value;
   let vShadow = document.getElementById("vshadow").value;
   let bShadow = document.getElementById("bshadow").value;
@@ -21,4 +21,4 @@ function hexToRgba(cShadow, oShadow) {
   return `rgba(${r},${g},${b},${oShadow})`;
 };
 
-generateShadow();
+generateTextShadow();

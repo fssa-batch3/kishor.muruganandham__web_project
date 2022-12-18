@@ -1,8 +1,8 @@
 let inputs = document.querySelectorAll(".field input");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generateLetterSpacing));
 
-function generateShadow() {
+function generateLetterSpacing() {
   let lSpacing = document.getElementById("letter-spacing").value;
 
   let letterSpace = `${lSpacing}px`;
@@ -12,4 +12,4 @@ function generateShadow() {
 };
 
 
-generateShadow();
+generateLetterSpacing();

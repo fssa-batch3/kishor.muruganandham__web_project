@@ -3,8 +3,8 @@
 #element{
     width: 100%;
     aspect-ratio: 16/9;
-    background: var(--pure-black) url("/Assests/Images/Background-image.jpg") no-repeat center center;
-    background-size: cover;
+    padding: 10px;
+    border: 5px solid transparent;
 }
 
 .select-field::after {

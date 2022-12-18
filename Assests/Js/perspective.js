@@ -1,8 +1,8 @@
 let inputs = document.querySelectorAll(".field input");
 
-inputs.forEach((inp) => inp.addEventListener("input", generateShadow));
+inputs.forEach((inp) => inp.addEventListener("input", generatePerspective));
 
-function generateShadow() {
+function generatePerspective() {
   let Length = document.getElementById("length").value;
   let xRotate = document.getElementById("rotatex").value;
   let yRotate = document.getElementById("rotatey").value;
@@ -16,6 +16,5 @@ function generateShadow() {
   document.getElementById("copyCodeChild").innerHTML = `transform: ${xyRotate}; \n transform-style: preserve-3d;`;
   document.getElementById("copyCode").innerHTML = `perspective: ${Lengths};`;
 };
-console.log(document.getElementById("rotatex").value)
 
-generateShadow();
+generatePerspective();

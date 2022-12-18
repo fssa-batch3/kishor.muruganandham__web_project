@@ -180,7 +180,7 @@ textarea {
 .contact-form > button > i {
   color: #ffffff;
 }
-.contact-form > button:hover .fa-rocket {
+.contact-form > button:hover i::before {
   transform: rotate(40deg);
   transition: 0.2s ease;
 }
