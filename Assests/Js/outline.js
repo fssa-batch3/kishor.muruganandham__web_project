@@ -14,7 +14,7 @@ function generateBorder() {
 
   document.getElementById("element").style.outline = outlineStyle;
   document.getElementById("element").style.outlineOffset = oOffset;
-  document.getElementById("copyCode").innerHTML = `outline: ${outlineStyle}; <br>  outline-offset: ${oOffset}`;
+  document.getElementById("copyCode").innerHTML = `outline: ${outlineStyle}; <br>  outline-offset: ${oOffset};`;
 };
 
 generateBorder();

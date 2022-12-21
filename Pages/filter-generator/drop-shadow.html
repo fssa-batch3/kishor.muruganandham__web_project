@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../Assests/CSS/box-generator.css">
 
     <!-- Primary JS Files -->
+    <script defer src="../../Assests/Js/drop-shadow.js"></script>
     <script src="../../Assests/Js/main.js"></script>
 
 
@@ -143,14 +144,18 @@
             <div class="content-wrapper">
                 <div class="left-wrap">
                     <div class="generator-preview">
-                        <div id="element"></div>
+                        <div id="element"><img src="../../Assests/Images/google-logo.png" alt="preview" width="150px"></div>
                     </div>
                     <div class="code-preview">
-                        <div id="copyCode">background: #fff url(/Assests/Images/Background-image.jpg) center center/cover no-repeat;</div>
+                        <div id="copyCode">filter: drop-shadow(5px 5px 10px #000000);</div>
                         <button id="copyButton" onclick="copyCode()">Copy to Clipboard!</button>
                     </div>
                 </div>
                 <div class="right-wrap">
+                  <div class="text-field field">
+                    <label for="image-url">Image URL:</label>
+                        <input type="text" name="image-url" id="image-url" class="input-style" value="../../Assests/Images/google-logo.png" style="padding: 10px;">
+                </div>
                     <div class="color-field field">
                         <label for="bg-color">Shadow-Color:</label>
                         <div>
@@ -159,23 +164,23 @@
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="bor-wid">Horizontal Offset:</label>
+                        <label for="hdShadow">Horizontal Offset:</label>
                         <div class="">
-                            <input type="range" name="bor-wid" id="bor-wid" min="-100" max="100" value="5" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="hdShadow" id="hdShadow" min="-100" max="100" value="5" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>5 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="bor-off">Vertical Offset:</label>
+                        <label for="vdShadow">Vertical Offset:</label>
                         <div class="">
-                            <input type="range" name="bor-off" id="bor-off" min="-100" max="100" value="5" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="vdShadow" id="vdShadow" min="-100" max="100" value="5" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>5 px</output>
                         </div>
                     </div>
                     <div class="range-field field">
-                        <label for="bor-off">Blur:</label>
+                        <label for="bdShadow">Blur:</label>
                         <div class="">
-                            <input type="range" name="bor-off" id="bor-off" min="0" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <input type="range" name="bdShadow" id="bdShadow" min="0" max="100" value="10" oninput="this.nextElementSibling.value = this.value + ' px'">
                             <output>10 px</output>
                         </div>
                     </div>

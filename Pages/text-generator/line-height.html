@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../Assests/CSS/box-generator.css">
 
     <!-- Primary JS Files -->
+    <script defer src="../../Assests/Js/line-height.js"></script>
     <script src="../../Assests/Js/main.js"></script>
         <!-- Primary Meta Tags -->
     <title>CSS Generators — Preview, Edit and Generate CSS.</title>
@@ -150,10 +151,17 @@
                 <div class="right-wrap">
 
                     <div class="range-field field">
+                        <label for="Font-Size">Font-Size:</label>
+                        <div class="">
+                            <input type="range" name="Font-Size" id="Font-Size" min="0" max="40" value="18" oninput="this.nextElementSibling.value = this.value + ' px'">
+                            <output>18 px</output>
+                        </div>
+                    </div>
+                    <div class="range-field field">
                         <label for="line-height">Line-Height:</label>
                         <div class="">
-                            <input type="range" name="line-height" id="line-height" step="0.5" min="0" max="10" value="1" oninput="this.nextElementSibling.value = this.value">
-                            <output>1</output>
+                            <input type="range" name="line-height" id="line-height" step="0.5" min="0" max="100" value="40" oninput="this.nextElementSibling.value = this.value">
+                            <output>40</output>
                         </div>
                     </div>
 
