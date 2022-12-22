@@ -1,0 +1,18 @@
+.gradient-radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.gradient-radio.field label .bi{
+    font-size: 40px;
+}
+.gradient-radio.field label{
+    cursor: pointer;
+    padding: 0 2px;
+    border-radius: 5px;
+}

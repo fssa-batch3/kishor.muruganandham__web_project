@@ -10,9 +10,10 @@
     <!-- Primary CSS Files -->
     <link rel="stylesheet" href="../../Assests/CSS/index.css" />
     <link rel="stylesheet" href="../../Assests/CSS/box-generator.css">
+    <link rel="stylesheet" href="../../Assests/CSS/gradient-color.css">
 
     <!-- Primary JS  -->
-
+    <script defer src="../../Assests/Js/gradient.js"></script>
     <script src="../../Assests/Js/main.js"></script>
     
         <!-- Primary Meta Tags -->
@@ -71,7 +72,7 @@
       </li>
       <li>
         <label for="box" class="side-label">Box-Generator</label>
-        <input type="radio" name="side-list" id="box" checked />
+        <input type="radio" name="side-list" id="box"  />
         <i class="bi bi-caret-down-fill"></i>
         <div class="aside-content">
           <a href="../../Pages/box-generator/box-shadow.html" class="active">Box-Shadow</a>
@@ -81,8 +82,8 @@
         </div>
       </li>
       <li>
-        <label for="box" class="side-label">Color-Generator</label>
-        <input type="radio" name="side-list" id="color"  />
+        <label for="color" class="side-label">Color-Generator</label>
+        <input type="radio" name="side-list" id="color"  checked/>
         <i class="bi bi-caret-down-fill"></i>
         <div class="aside-content">
           <a href="../../Pages/color-generator/color.html">Color</a>
@@ -149,13 +150,46 @@
                     </div>
                 </div>
                 <div class="right-wrap">
-                    <div class="color-field field">
-                        <label for="bg-color">Shadow-Color:</label>
-                        <div>
-                            <input type="color" name="bg-color" id="bg-color" oninput="this.nextElementSibling.value = this.value">
-                        <output>#000000</output>
-                        </div>
+                  <div class="select-field field">
+                    <label for="gradient-type">Type :</label>
+                    <select name="gradient-type" id="gradient-type" class="input-style">
+                        <option value="radial">Radial-Gradient</option>
+                        <option value="linear">Linear-Gradient</option>
+                    </select>
+                </div>
+                  <div class="color-field field">
+                    <label for="Color-1">Color-1:</label>
+                    <div>
+                        <input type="color" name="Color-1" id="Color-1" value="#ffffff" oninput="this.nextElementSibling.value = this.value">
+                    <output>#ffffff</output>
                     </div>
+                </div>
+                <div class="color-field field">
+                  <label for="Color-2">Color-2:</label>
+                  <div>
+                      <input type="color" name="Color-2" id="Color-2" oninput="this.nextElementSibling.value = this.value">
+                  <output>#000000</output>
+                  </div>
+              </div>
+                  <div class="gradient-radio field linear">
+                    <label for="to-top"><i class="bi bi-arrow-up-square-fill"></i></label>
+                    <input value="to top" type="radio" name="direction" id="to-top">
+                    <label for="to-bottom"><i class="bi bi-arrow-down-square-fill"></i></label>
+                    <input value="to bottom" type="radio" name="direction" id="to-bottom">
+                    <label for="to-right"><i class="bi bi-arrow-right-square-fill"></i></label>
+                    <input value="to right" type="radio" name="direction" id="to-right" checked>
+                    <label for="to-left"><i class="bi bi-arrow-left-square-fill"></i></label>
+                    <input value="to left" type="radio" name="direction" id="to-left">
+                    <label for="top-left"><i class="bi bi-arrow-up-left-square-fill"></i></label>
+                    <input value="to top left" type="radio" name="direction" id="top-left">
+                    <label for="bottom-right"><i class="bi bi-arrow-down-right-square-fill"></i></label>
+                    <input value="to bottom right" type="radio" name="direction" id="bottom-right">
+                    <label for="top-right"><i class="bi bi-arrow-up-right-square-fill"></i></label>
+                    <input value="to top right" type="radio" name="direction" id="top-right">
+                    <label for="bottom-left"><i class="bi bi-arrow-down-left-square-fill"></i></label>
+                    <input value="to bottom left" type="radio" name="direction" id="bottom-left">
+                  </div>
+                   
                     
                 </div>
             </div>
